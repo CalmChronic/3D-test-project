@@ -6,6 +6,6 @@ public class Scalr : MonoBehaviour
 
     private void Update()
     {
-        transform.localScale += new Vector3(_scaleSpeed * Time.deltaTime, _scaleSpeed * Time.deltaTime, _scaleSpeed * Time.deltaTime);
+        transform.localScale += _scaleSpeed * Time.deltaTime * Vector3.one;
     }
 }
